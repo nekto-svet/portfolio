@@ -1,6 +1,6 @@
 $blue_color: #0087B4
 $yellow_color: #fcfdbd
-$green_color: #709855
+$green_color: #65b657
 
 *
     
@@ -11,10 +11,11 @@ a
 
 .nav
     width: 100%
-    height: 120px
-    background-color: $blue_color
+    height: 140px
+    background-color: $green_color
     position: fixed
     z-index: +3
+    // border-bottom: 3px solid black
     &_logo
         font-family: "Permanent Marker", cursive
         font-weight: 400
@@ -27,12 +28,20 @@ a
             margin: 3px
             text-align: center
             width: 100px
+            height: 90px
+            width: 90px
+            border-radius: 50%
+            border: 3px solid black
+            &:first-child
+            background-color: #e3903d
             &_img
                 height: 60px
                 margin: 0 auto
             &_txt
+                padding-top: 30px
                 color: black
                 font-size: calc(10px + 0.5vw)
+                font-weight: 700
                 text-align: center
     &_links2
          list-style: none
@@ -44,64 +53,80 @@ a
                 height: 50px
 
 #under_nav
-    height: 120px
+    height: 90px
 
 .first      
-    position: relative
+    // position: relative
     width: 100%
     height: 700px
-    background-image: url(../images/backgrounds/bg_main.png)
+    background-image: url(../images/backgrounds/bg_main5.png)
+    background-size: 2000px
     background-position: center
     background-repeat: no-repeat
     background-color: $blue_color
     // padding-top: 120px
-    &_wrapper
-        height: calc(100vh - 80px)
-    &_art
-        height: 100%
-        &_photo
-            height: 70%
-        &_text
-            height: 30%
-    &_code
-        height: 100%
-        &_text
-            margin-top: 10%
-            height: 30%
-            &_1
-                font-family: "Permanent Marker", cursive
-                font-weight: 400
-                font-size: calc(20px + 1vw) 
-        &_photo
-            height: 70%
+    &_header
+        text-align: center
+        font-family: "Permanent Marker", cursive
+        font-weight: 400
+        font-size: calc(20px + 1vw) 
+        padding-top: 150px
+        // transform: translateX(-10%)
+        // height: calc(100vh - 80px)
+    // &_art
+    //     height: 100%
+    //     &_photo
+    //         height: 70%
+    //     &_text
+    //         height: 30%
+    // &_code
+    //     height: 100%
+    //     &_text
+    //         margin-top: 50%
+    //         height: 30%
+    //         &_1
+    //             font-family: "Permanent Marker", cursive
+    //             font-weight: 400
+    //             font-size: calc(20px + 1vw) 
+    //             transform: translateX(-10%)
+        // &_photo
+        //     height: 70%
     &_face
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-        top: 30%
-        width: 18vw
-        height: 18vw
+        // position: absolute
+        // left: 50%
+        // transform: translateX(-50%)
+        // top: 30%
+        margin-top: 60px
+        display: inline-block
+        width: 22vw
+        height: 22vw
         border-radius: 50%
-        background-color: #fff
+        background-image: url('../images/Без имени-2.jpg')
+        background-position: center
+        // background-size: 2000px
+        background-size: 100%
+        border: 5px solid #000
+        // background-color: #fff
 
 // main
 //     position: relative
 .between1
     position: absolute
-    top: 99vh
+    top: 720px
     // &_top
     //     width: 100vw
     //     height: 100px
     //     background-color: $blue_color
     width: 100vw
-    height: 600px
-    background-image: url(../images/backgrounds/middle1_background.webp)
+    height: 500px
+    background-image: url(../images/backgrounds/middle1_background2.png)
     background-position: center
-    background-size: 3010px
+    // background-position: 0 -500
+    background-size: 2500px
     img 
         height: calc( 200px + 5vw)
         position: absolute
-        z-index: +1
+        z-index: +2
         right: 10%
         top: -30%
         &:hover
@@ -133,11 +158,13 @@ a
         color: #000000d4
     &_cards
         // margin-top: 10vw
+.card
+    border: 4px solid black
 
 .between2
     width: 100vw
     height: 421px
-    background-image: url(../images/backgrounds/middle2_background.png)
+    background-image: url(../images/backgrounds/middle2_background1.png)
 
 .projects
     position: relative
@@ -163,7 +190,7 @@ a
     &_item
         width: 80%
         height: 300px
-        background-color: #fff
+        background-color: $yellow_color
         border-radius: 10px
         margin-bottom: 40px
         &_left
@@ -171,7 +198,6 @@ a
             height: 100%
             width: 40%
             padding: 20px
-            border-right: 10px solid #ffffff
             li
                 font-size: calc(10px + 0.5vw)
                 font-weight: 600
