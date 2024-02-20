@@ -2,236 +2,69 @@ $blue_color: #0087B4
 $yellow_color: #fcfdbd
 $green_color: #65b657
 
-*
+body
+  padding-top: 2vh 
+  
+.navbar
+    background: $blue_color
+    &-nav
+    &.fab 
+      border-radius: 50%
+      .nav-link 
+    &.active 
+      color: #fff 
+      background-color: $blue_color 
+      border-radius: .25rem 
+
+      &:hover
+        background-color: darken($yellow_color, 60%)
     
-    // border: solid 0.5px   
-a
-    text-decoration: none
-    color: #fff
+    &.fab
+      border-radius: 50%
 
-.nav
-    width: 100%
-    height: 140px
-    background-color: $green_color
-    position: fixed
-    z-index: +3
-    // border-bottom: 3px solid black
-    &_logo
-        font-family: "Permanent Marker", cursive
-        font-weight: 400
-        font-size: calc(20px + 1vw) 
-        a
-            color: #000000d4
-    &_links1
-        list-style: none
-        &_item
-            margin: 3px
-            text-align: center
-            width: 100px
-            height: 90px
-            width: 90px
+.home
+    &-main
+        &-photo
+            background-image: url('../images/Без имени-2.jpg')
+            background-size: contain
+            background-position: center
             border-radius: 50%
-            border: 3px solid black
-            &:first-child
-            background-color: #e3903d
-            &_img
-                height: 60px
-                margin: 0 auto
-            &_txt
-                padding-top: 30px
-                color: black
-                font-size: calc(10px + 0.5vw)
-                font-weight: 700
-                text-align: center
-    &_links2
-         list-style: none
-         &_item
-            margin: 3px
+            width: calc(150px + 15vw)
+            height: calc(150px + 15vw)
+            margin: 0 auto
+        &-text
             text-align: center
-            width: 100px
-            &_img
-                height: 50px
 
-#under_nav
-    height: 90px
-
-.first      
-    // position: relative
-    width: 100%
-    height: 700px
-    background-image: url(../images/backgrounds/bg_main5.png)
-    background-size: 2000px
-    background-position: center
-    background-repeat: no-repeat
-    background-color: $blue_color
-    // padding-top: 120px
-    &_header
+.skills 
+  .card 
+    width: calc(100px + 4vw)
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) 
+    transition: transform 0.2s 
+    
+    &:hover 
+      transform: scale(1.05)
+      &-img
+        size: 100%
+    
+    
+    .card-img-top 
+      max-height: 200px
+      object-fit: cover
+    
+    
+    .card-title 
         text-align: center
-        font-family: "Permanent Marker", cursive
-        font-weight: 400
-        font-size: calc(20px + 1vw) 
-        padding-top: 150px
-        // transform: translateX(-10%)
-        // height: calc(100vh - 80px)
-    // &_art
-    //     height: 100%
-    //     &_photo
-    //         height: 70%
-    //     &_text
-    //         height: 30%
-    // &_code
-    //     height: 100%
-    //     &_text
-    //         margin-top: 50%
-    //         height: 30%
-    //         &_1
-    //             font-family: "Permanent Marker", cursive
-    //             font-weight: 400
-    //             font-size: calc(20px + 1vw) 
-    //             transform: translateX(-10%)
-        // &_photo
-        //     height: 70%
-    &_face
-        // position: absolute
-        // left: 50%
-        // transform: translateX(-50%)
-        // top: 30%
-        margin-top: 60px
-        display: inline-block
-        width: 22vw
-        height: 22vw
-        border-radius: 50%
-        background-image: url('../images/Без имени-2.jpg')
-        background-position: center
-        // background-size: 2000px
-        background-size: 100%
-        border: 5px solid #000
-        // background-color: #fff
-
-// main
-//     position: relative
-.between1
-    position: absolute
-    top: 720px
-    // &_top
-    //     width: 100vw
-    //     height: 100px
-    //     background-color: $blue_color
-    width: 100vw
-    height: 500px
-    background-image: url(../images/backgrounds/middle1_background2.png)
-    background-position: center
-    // background-position: 0 -500
-    background-size: 2500px
-    img 
-        height: calc( 200px + 5vw)
-        position: absolute
-        z-index: +2
-        right: 10%
-        top: -30%
-        &:hover
-            transform: rotate(1440deg)
-            transition-duration: 2s
-
-
-.skills
-    padding-top: 300px
-    // height: 100vh
-    width: 100vw
-    background-color: $yellow_color
-    // position: relative
-    // z-index: 0
-    // &_item
-    // &__wrapper
-    //     position: relative
-    //     height: 100px
-    &_header
-        position: absolute
-        left: 40%
-        top: 800px
-        transform: translateX(-50%)
-        // top: 800px
-        z-index: +2
-        font-family: "Permanent Marker", cursive
-        font-weight: 400
-        font-size: calc(25px + 2vw) 
-        color: #000000d4
-    &_cards
-        // margin-top: 10vw
-.card
-    border: 4px solid black
-
-.between2
-    width: 100vw
-    height: 421px
-    background-image: url(../images/backgrounds/middle2_background1.png)
-
+        color: $green_color
+    
 .projects
-    position: relative
-    margin: 0
-    padding-top: 70px
-    width: 100vw
-    background-color: $green_color
-    &_header
-        text-align: center
-        font-family: "Permanent Marker", cursive
-        font-weight: 400
-        font-size: 50px
-        color: #000000d4
-    &_text
-        margin-top: 60px
-        width: 80%
-        a
-            font-size: calc(10px + 0.5vw)
-            border: 4px solid #fa804c
-            border-radius: 50%
-            margin: 0 14px 0 14px
-                    
-    &_item
-        width: 80%
-        height: 300px
-        background-color: $yellow_color
-        border-radius: 10px
-        margin-bottom: 40px
-        &_left
-            background: $yellow_color
-            height: 100%
-            width: 40%
-            padding: 20px
-            li
-                font-size: calc(10px + 0.5vw)
-                font-weight: 600
-                margin: 15px
-        &_right
-            height: 100%
-            width:60%
-            
-#projects_item_right_1
-    background-image: url('../images/backgrounds/bg_proj1.png')
-    background-size: 120%
-    background-position: center
-    
-#projects_item_right_2
-    background-image: url('../images/backgrounds/bg_proj2.png')
-    background-size: 120%
-    background-position: center
-    
-#projects_item_right_3
-    background-image: url('../images/backgrounds/bg_proj3.png')
-    background-size: 120%
-    background-position: center 0
+  .card 
+    &-list
+        font-size: 1rem
+    &-links a 
+      text-decoration: none
+      margin-right: 10px
+      font-size: calc( 15px + 1vw )
 
-#projects_arrow1
-    position: absolute
-    left: 10%
-    top: 80px
-    width: 12vw
-    transform: rotate(90deg)
-
-#projects_arrow2
-    position: absolute
-    right: 10%
-    top: 550px
-    width: 12vw
-    transform: rotate(70deg)
+    img 
+      max-width: 100% 
     
