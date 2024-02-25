@@ -38,29 +38,24 @@ body
         &-list
           text-align: left
 
-
 .skills 
-  .card 
+  height: 100vh
+  padding-top: 10%
+  &-card 
     width: calc(100px + 4vw)
     box-shadow: 0 4px 8px rgba(0,0,0,0.1) 
     transition: transform 0.2s 
-    
     &:hover 
       transform: scale(1.05)
-      &-img
-        size: 100%
-    
-    
-    .card-img-top 
-      max-height: 200px
-      object-fit: cover
-    
-    
-    .card-title 
-        text-align: center
-        color: $green_color
+    &-img
+      width: 100%
+    &-title 
+      text-align: center
+      color: $green_color
     
 .projects
+  min-height: 100vw
+  padding: 10%
   .card 
     &-list
         font-size: 1rem
@@ -71,7 +66,10 @@ body
 
     img 
       max-width: 100% 
-   
+
+.education
+  min-height: 100vw
+  padding: 10%
 .timeline 
     position: relative
     &-card 
@@ -99,6 +97,8 @@ body
         background: $blue_color
         border: 4px solid $blue_color
 
+.experience
+  padding: 10%
 #exp-timeline
     padding-right: 20px
     &::before 
@@ -121,4 +121,5 @@ body
         background: $blue_color
         border: 4px solid $blue_color
 
-   
+.contacts
+  padding-bottom: 10%
