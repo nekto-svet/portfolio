@@ -4,7 +4,7 @@ $green_color: #65b657
 
 body
   padding-top: 2vh 
-  
+
 .navbar
     background: $blue_color
     &-nav
@@ -67,4 +67,50 @@ body
 
     img 
       max-width: 100% 
-    
+   
+.timeline 
+    position: relative
+    &-card 
+        position: relative
+        
+#edu-timeline
+    padding-left: 20px
+    &::before 
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        width: 4px
+        background: $blue_color
+#edu-timeline-card-body::before 
+        content: ''
+        position: absolute
+        left: -26px
+        top: -1px
+        height: 15px
+        width: 15px
+        border-radius: 50%
+        background: $blue_color
+        border: 4px solid $blue_color
+
+#exp-timeline
+    padding-right: 20px
+    &::before 
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        width: 4px
+        background: $blue_color
+#exp-timeline-card-body::after 
+        content: ''
+        position: absolute
+        right: 25
+        top: -1px
+        height: 15px
+        width: 15px
+        border-radius: 50%
+        background: $blue_color
+        border: 4px solid $blue_color
